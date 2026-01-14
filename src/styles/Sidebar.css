@@ -1,0 +1,148 @@
+.nerko-one-regular {
+  font-family: "Nerko One", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.sidebar{
+    height: 100vh;
+}
+
+/* .sidebar{
+    display: flex;
+    flex-direction: column;
+    padding: 0em 1em 0em 0em;
+    max-height: 100vh;
+    overflow-y: hidden;
+    justify-content: space-between;
+    width: 100%;
+    border-right: 1px solid #dddddd;
+    border-image: linear-gadient(to bottom, white 55%, #dddddd 45%)1;
+} */
+.sidebar .suppmenu{
+    display: none;
+}
+.sidebar .nomapp{
+    display: flex;
+    flex-direction: row;
+    /* background-color: blueviolet; */
+    align-items: start;
+    justify-content: start;
+    padding: 1em 0em 1em 0em;
+    column-gap: 1em;
+    margin: 0em 1em 0em 1em;
+    border-bottom: 1px solid #6b6b6b;
+    height: 10%;
+}
+.sidebar .nomapp .logo{
+    width: 1.95em;
+    height: 1.5em;
+    background-color: black;
+    border-radius: 0.2em;
+    display: flex;
+}
+.sidebar .nomapp .logo img{
+    width: 100%;
+    height: 100%;
+}
+.sidebar .nomapp .description .nom{
+    font-size: 12px;
+    font-weight: bolder;
+    color: black;
+}
+.sidebar .nomapp .description .panel{
+    font-size: 11px;
+    font-weight: light;
+    color: black;
+}
+.sidebar .redirections{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: green; */
+    row-gap: 4em;
+    padding: 1.5em 1em 2em 1em;
+    height: 90%;
+}
+.sidebar .redirections .liens{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: red; */
+    row-gap: 1.5em;
+}
+.sidebar .redirections .domaines{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+}
+.sidebar .redirections .domaines .title{
+    font-size: 0.75em;
+}
+/* .position {
+    background-color: green;
+} */
+.position.active{
+    background-color: #f2f6ff;
+    color: red;
+}
+
+.sidebar .redirections .liens .lien :link, .sidebar .deconnexion .lien :link{
+    display: flex;
+    flex-direction: row;
+    column-gap: 1em;
+    text-decoration: none;
+    align-items: center;
+    /* background-color: blanchedalmond; */
+    padding: 0em 0em 0em 1em;
+}
+.sidebar .redirections .liens .lien :link, .sidebar .deconnexion .lien :link .text{
+    font-size: 0.75em;
+    color: black;
+}
+.sidebar .deconnexion{
+    background-color: rgb(238, 198, 198);
+}
+.text{
+    color: black;
+}
+@media only screen and (max-width: 850px){
+    .sidebar{
+        max-width: 100vw;
+    }
+    /* .sidebar .nomapp{
+        background-color: red;
+    } */
+     .sidebar .nomapp{
+        height: 7em;
+        align-items: center;
+     }
+    .sidebar .suppmenu{
+        display: flex;
+        margin-left: 4em;
+        justify-content: end;
+        align-items: end;
+    }
+    .sidebar .nomapp .description .nom{
+        font-size: 1em;
+        font-weight: bolder;
+        color: black;
+    }
+    .sidebar .redirections .domaines .title{
+       display: flex;
+       font-size: 1em;
+       height: 2em;
+       margin-right: 1em;
+    }
+    .sidebar .redirections{
+        row-gap: 7em;
+    }
+    .sidebar .redirections .liens .lien :link, .sidebar .deconnexion .lien :link .text{
+        font-size: 1.2em;
+        color: black;
+    }
+    .sidebar .deconnexion{
+        height: 2.5em;
+        display: flex;
+        align-items: center;
+    }
+}

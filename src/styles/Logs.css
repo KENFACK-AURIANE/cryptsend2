@@ -1,0 +1,312 @@
+:root {
+  --bg: #f9f9f9;
+  --surface: #ffffff;
+  --text: #222222;
+  --muted: #666666;
+  --border: #dddddd;
+  --placeholder: #eeeeee;
+}
+
+/* Dark theme variables are applied by adding .dark to .dashboard */
+.dashboardT {
+  background-color: var(--bg);
+  color: var(--text);
+  padding-top: 0em;
+  width: 100%;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* Main content */
+.contentT {
+  padding: 0em 2em 2em 2em;
+  /* flex: 1; */
+}
+
+/* Cards grid */
+.cards-gridL {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 1.5em;
+  height: 9em;
+}
+
+.contentT{
+  /* height: 90%; */
+  display: flex;
+  row-gap: 1em;
+  padding-top: 1.5em;
+  flex-direction: column;
+}
+.cardN{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 0.25em;
+}
+.cardN .enteteN,.cardN .card-valueN{
+  font-size: 0.85em;
+  font-weight: 600;
+}
+.cardN .card-descN{
+  font-size: 0.50em;
+  color: #b0b0b0;
+}
+.contentT .titlePageT{
+  padding:0em 0em 0em 0em;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5em;
+}
+.contentT .titlePageT .titleT{
+  font-size: 1.25em;
+  font-weight: 700;
+}
+.contentT .titlePageT .descriptionT{
+  font-size: 0.75em;
+  font-weight: lighter;
+  color: #999999;
+}
+.deuxiemetitleT{
+  display: none;
+}
+.grid2L {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 2em 1em 1em 1em;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.85em;
+}
+.grid2L .enteteGrid2L{
+  display: flex;
+  flex-direction:column;
+  justify-content: space-between;
+  align-items: start;
+  row-gap: 1em;
+  padding: 0em 0em 0em 0em;
+}
+.grid2L .enteteGrid2L .titreGrid2L{
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.45em;
+}
+.grid2L .grid2LTitle{
+  font-size: 1em;
+  font-weight: 600;
+}
+.grid2L .grid2LSubTitle{
+  font-size: 0.75em;
+  font-weight: lighter;
+  color: #999999;
+}
+.grid2L .searchL{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0em 0em 0em 0em;
+  width: 100%;
+  align-items: center;
+  height: 100%;
+}
+.grid2L .searchL .searchIconL{
+  background-color: #f4f5f6;
+  border-radius: 0.25em;
+  height: 90%;
+  width: 83%;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.grid2L .searchL .searchIconL input{
+  height: 75%;
+  background-color: #f4f5f6;
+  width: 90%;
+  border-top-right-radius: 0.25em;
+  border-bottom-right-radius: 0.25em;
+  outline: none;
+  border: none;
+}
+.grid2L .searchL .filtresL{
+   background-color: #f4f5f6;
+  width: 15%;
+  height: 100%;
+  border-radius: 0.25em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.30em 0.2em 0.330em 0.2em;
+}
+
+.grid2L .metrics .tables{
+  width: 100%;
+  text-align: start;
+  border-radius: 0.5em;
+  padding: 0.5em;
+  border: 1px solid #f4f5f6;
+  
+}
+.grid2L .metrics .tables th{
+  height: 3em;
+  text-align: start;
+  border-bottom: 1px solid #f4f5f6;
+  color: #313131;
+  font-size: 0.75em;
+}
+.grid2L .metrics .tables tr{
+  height: 3em;
+  text-align: start;
+  border-bottom: 1px solid #f4f5f6;
+}
+.grid2L .metrics .tables tr td{
+  font-size: 0.75em;
+  border-bottom: 1px solid #f4f5f6;
+}
+.grid2L .metrics .tables .hash{
+  
+  padding: 1em 0em 0em 0em;
+}
+
+.grid2T .metrics .tables .fromto{
+  color: #b0b0b0;
+}
+.grid2T .metrics .tables .fromto .from{
+  margin-bottom: 0.5em;
+}
+.grid2T .metrics .tables .fromto .from .emetteur{
+  background-color: #f2f0ef;
+  border-radius: 0.15em;
+  padding: 0.12em;
+  color: #434343;
+  font-size: 0.92em;
+}
+.grid2T .metrics .tables .fromto .to .destinataire{
+  background-color: #f2f0ef;
+  border-radius: 0.15em;
+  color: #434343;
+  padding: 0.12em;
+  font-size: 0.92em;
+}
+.grid2T .metrics .tables .amount{
+  font-size: 0.70em;
+  font-weight: 700;
+}
+.grid2T .metrics .tables .fee{
+  font-size: 0.70em;
+  font-weight: 700;
+  color: #969696;
+}
+.grid2T .metrics .tables .statut{
+  display: flex;
+  align-items: center;
+  padding: 1em 2em 1em 0em;
+}
+.grid2T .metrics .tables .statut .statuts.failed{
+  background-color: #f7e3dd;
+  color: #d67472;
+  display: flex;
+  height: 1.65em;
+  justify-content: center;
+  width: 80%;
+  padding:0.22em 0.12em 0em 0.22em;
+  text-align: center;
+  border-radius: 1em;
+}
+.grid2T .metrics .tables .statuts.confirmed{
+  background-color: #ecf7e9;
+  color: #82c180;
+  display: flex;
+  height: 1.65em;
+  justify-content: center;
+  width: 80%;
+  padding:0.22em 0.12em 0em 0.22em;
+  text-align: center;
+  border-radius: 1em;
+}
+.grid2T .metrics .tables .statuts.pending{
+  background-color: #fff1df;
+  color: #ffca32;
+  display: flex;
+  height: 1.65em;
+  justify-content: center;
+  width: 80%;
+  padding:0.22em 0.12em 0em 0.22em;
+  text-align: center;
+  border-radius: 1em;
+}
+.grid2T .metrics .tables .block{
+  font-size: 0.70em;
+  font-weight: 700;
+}
+.grid2T .metrics .tables .time{
+  font-size: 0.70em;
+  font-weight: 700;
+  color: #969696;
+}
+.grid2T .metrics .tables .action{
+  font-size: 0.70em;
+  font-weight: 700;
+}
+.grid3T .boxT {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 2em 1em 1em 1em;
+  width: 31.75em;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.8em;
+}
+.grid3T .boxT .entetegrid3T{
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5em;
+}
+.grid3T .boxT .gridTitleT{
+  font-size: 1em;
+  font-weight: 600;
+}
+.grid3T .boxT .gridSubTitleT{
+  font-size: 0.75em;
+  font-weight: lighter;
+  color: #999999;
+}
+.grid3T .boxT .network{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/* Responsive */
+@media only screen and (max-width: 850px){
+  .dashboardT{
+    justify-content: center;
+    align-items: center;
+    padding: 0em 0em 0.25em 0em;
+  }
+  .contentT {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1.5em;
+    width: 100%;
+  }
+  .contentT .titlePageT .deuxiemetitleT{
+    display: flex;
+    font-size: 1.25em;
+    font-weight: 700;
+  }
+  .cards-gridT{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: fit-content;
+    width: 22em;
+   
+  }
+}

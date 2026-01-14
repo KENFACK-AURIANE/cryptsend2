@@ -1,0 +1,253 @@
+{
+    "Réponse":
+    {
+        "status": "healthy",
+        "timestamp": "2025-08-28T10:00:00Z",
+        "services": {
+            "database": "healthy",
+            "blockchain": "healthy",
+            "mobile_money": "degraded",
+            "kms": "healthy"
+        },
+        "version": "1.0.0"
+    },
+
+   "blockchainTransparency": [
+        {
+        "id": 1,
+        "name": "Block Confirmations",
+        "value": 4,
+        "maxValue": 6
+        },
+        {
+        "id": 2,
+        "name": "Network Decentralization",
+        "value": 94.12
+        },
+        {
+        "id": 3,
+        "name": "Transaction Transparency",
+        "value": 60
+        }
+   ],
+    "cardTransaction":
+    [
+        {
+            "id": 1,
+            "title": "Daily Volume",
+            "value": "4,149",
+            "lastN": "+1.22%",
+            "comment": "from yesterday",
+            "icon": "AiFillDollarCircle"
+        },
+        {
+            "id": 2,
+            "title": "Total Transactions",
+            "value": "8,554",
+            "lastN": "+1.22%",
+            "comment": "from the last hour",
+            "icon": "AiOutlineTransaction"
+        },
+        {
+            "id": 3,
+            "title": "Average Fee",
+            "value": "$0.49",
+            "lastN": "+3.78%",
+            "comment": "from Last week",
+            "icon": "AiOutlineUser"
+        },
+        {
+            "id": 4,
+            "title": "Success Rate",
+            "value": "99,7%",
+            "lastN": "",
+            "comment": "Excellent network performance",
+            "icon": "AiOutlineUser"
+        }
+    ],
+    "transactions":
+    [
+        {
+            "id": "1",
+            "transactionHash":"abcdefghijk",
+            "from": "abcdefghijk",
+            "to":"dhdhdjdjkdkdkkd",
+            "amount": "$3,45000",
+            "Fee": "$0.21",
+            "Statut":"confirmed",
+            "Block": "847356",
+            "Time": "2025-08-28T10:00:00Z",
+            "Actions":  "847356"
+        },
+        {
+            "id": "2",
+            "transactionHash":"abcdefghijkjuuhhjjkk",
+            "from": "abcdefghijk",
+            "to":"dhdhdjdjkdkdkkd",
+            "amount": "$3,45000",
+            "Fee": "$0.21",
+            "Statut":"failed",
+            "Block": "847356",
+            "Time": "2025-08-28T10:00:00Z",
+            "Actions":  "847356"
+        },
+        {
+            "id": "2",
+            "transactionHash":"abcdefghijk",
+            "from": "abcdefghijk",
+            "to":"dhdhdjdjkdkdkkd",
+            "amount": "$3,45000",
+            "Fee": "$0.21",
+            "Statut":"pending",
+            "Block": "847356",
+            "Time": "2025-08-28T10:00:00Z",
+            "Actions":  "847356"
+        },
+        {
+            "id": "2",
+            "transactionHash":"abcdefghijk",
+            "from": "abcdefghijk",
+            "to":"dhdhdjdjkdkdkkd",
+            "amount": "$3,45000",
+            "Fee": "$0.21",
+            "Statut":"pending",
+            "Block": "847356",
+            "Time": "2025-08-28T10:00:00Z",
+            "Actions":  "847356"
+        }
+    ],
+    "Logs":[
+        {
+            "id": "1",
+            "timestamp":"2025-08-28T10:00:00Z",
+            "level": "info",
+            "services": "info",
+            "message": "blockchain mine succesfully with 245 trabsactions",
+            "sources": "mining services",
+            "Actions":"info"
+        },
+        {
+            "id": "2",
+            "timestamp":"2025-08-28T10:00:00Z",
+            "level": "info",
+            "services": "info",
+            "message": "blockchain mine succesfully with 245 trabsactions",
+            "sources": "mining services",
+            "Actions":"info"
+        },
+        {
+            "id": "3",
+            "timestamp":"2025-08-28T10:00:00Z",
+            "level": "info",
+            "services": "info",
+            "message": "blockchain mine succesfully with 245 trabsactions",
+            "sources": "mining services",
+            "Actions":"info"
+        }
+    ],
+    "Network":[
+        {
+            "Title":"Block Height",
+            "value": "847392",
+            "description": "Latest Block"
+        },
+        {
+            "Title":"Gas Price",
+            "value": "15 gwei",
+            "description": "Current Average"
+        },
+        {
+            "Title":"Block Time",
+            "value": "3.2s",
+            "description": "Average confirmation"
+        },
+        {
+            "Title":"Network Load",
+            "value": "67%",
+            "description": "Current Capacity"
+        }
+    ],
+    "nodeStatus":
+    [
+        {
+            "id": 1,
+            "iconNode": "AiFillDollarCircle",
+            "title": "node-01",
+            "iconWorld": "AiFillDollarCircle",
+            "continent": "node-01",
+            "uptime": "94.12",
+            "latency": "35ms",
+            "peers": "52",
+            "status": "healthy"
+        },
+        {
+            "id": 2,
+            "iconNode": "AiFillDollarCircle",
+            "title": "node-01",
+            "iconWorld": "AiFillDollarCircle",
+            "continent": "node-01",
+            "uptime": "94.12",
+            "latency": "35ms",
+            "peers": "52",
+            "status": "healthy"
+        },
+        {
+            "id": 3,
+            "iconNode": "AiFillDollarCircle",
+            "title": "node-01",
+            "iconWorld": "AiFillDollarCircle",
+            "continent": "node-01",
+            "uptime": "94.12",
+            "latency": "35ms",
+            "peers": "52",
+            "status": "healthy"
+        },
+        {
+            "id": 4,
+            "iconNode": "AiFillDollarCircle",
+            "title": "node-01",
+            "iconWorld": "AiFillDollarCircle",
+            "continent": "node-01",
+            "uptime": "94.12",
+            "latency": "35ms",
+            "peers": "52",
+            "status": "healthy"
+        }
+    ],
+     "cardMonitoring":
+    [
+        {
+            "id": 1,
+            "title": "Daily Volume",
+            "value": "94.12",
+            "lastN": "+1.22%",
+            "comment": "from yesterday",
+            "icon": "AiFillDollarCircle"
+        },
+        {
+            "id": 2,
+            "title": "Total Transactions",
+            "value": "94.12",
+            "lastN": "+1.22%",
+            "comment": "from the last hour",
+            "icon": "AiOutlineTransaction"
+        },
+        {
+            "id": 3,
+            "title": "Average Fee",
+            "value": "94.12",
+            "lastN": "+3.78%",
+            "comment": "from Last week",
+            "icon": "AiOutlineUser"
+        },
+        {
+            "id": 4,
+            "title": "Success Rate",
+            "value": "95",
+            "lastN": "",
+            "comment": "Excellent network performance",
+            "icon": "AiOutlineUser"
+        }
+    ]
+    
+}
